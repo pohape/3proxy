@@ -47,7 +47,8 @@ Must be something like this:
 
 Apr 10 19:58:38 vps-0fb592ee systemd[1]: Started 3proxy tiny proxy server.
 Apr 10 19:58:38 vps-0fb592ee systemd[1]: 3proxy.service: Deactivated successfully.
-Apr 10 19:58:38 vps-0fb592ee systemd[1]: 3proxy.service: Unit process 1206 (3proxy) remains running```
+Apr 10 19:58:38 vps-0fb592ee systemd[1]: 3proxy.service: Unit process 1206 (3proxy) remains running
+```
 
 In my config file I enabled only HTTP-proxy with port 51281. Let's check using cURL command:
 
