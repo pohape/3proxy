@@ -61,4 +61,17 @@ When you change your settings in /etc/3proxy/3proxy.cfg or your users and passwo
 
      sudo restart systemctl start 3proxy.service
      
+### Firewall
 If you have any firewall, please check your firewall documentation how to allow to use your proxy port (51281 in this case).
+
+#### If you are using Uncomplicated Firewall (UFW):
+
+     sudo ufw allow 51281/tcp
+     sudo ufw enable
+
+
+#### If you are using iptables:
+
+     sudo iptables -I INPUT -p tcp -m tcp --dport 51281 -j ACCEPT
+
+
