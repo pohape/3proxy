@@ -1,4 +1,4 @@
-# 3proxy (0.9.4) install instructions for Ubuntu 22.04
+# 3proxy (0.9.4) installation instructions for Ubuntu 22.04
      wget https://github.com/z3APA3A/3proxy/releases/download/0.9.4/3proxy-0.9.4.x86_64.deb
      sudo apt install ./3proxy-0.9.4.x86_64.deb
 
@@ -50,7 +50,8 @@ Apr 10 19:58:38 vps-0fb592ee systemd[1]: 3proxy.service: Deactivated successfull
 Apr 10 19:58:38 vps-0fb592ee systemd[1]: 3proxy.service: Unit process 1206 (3proxy) remains running
 ```
 
-In my config file I enabled only HTTP-proxy with port 51281. Let's check using cURL command:
+In my config file I enabled only HTTP-proxy with port 51281.
+Let's check how everything works using cURL command (from another machine):
 
      curl -x http://username_from_proxyauth_file:password_from_proxyauth_file@your_server_ip:51281 https://2ip.ru/
      
