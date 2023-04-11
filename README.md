@@ -69,9 +69,11 @@ If you have any firewall, please check your firewall documentation how to allow 
      sudo ufw allow 51281/tcp
      sudo ufw enable
 
-
 #### If you are using iptables:
 
      sudo iptables -I INPUT -p tcp -m tcp --dport 51281 -j ACCEPT
 
+#### If you are using firewalld:
 
+     firewall-cmd --add-port=51281/tcp --permanent
+     firewall-cmd --reload
